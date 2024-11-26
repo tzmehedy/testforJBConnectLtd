@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin:0
+}
+
+.navDesign{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    
+    
+}
+.navDesign li{
+    list-style: none;
+}
+.navDesign  li a{
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
