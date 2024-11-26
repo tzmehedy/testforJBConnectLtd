@@ -1,12 +1,19 @@
 *{
     padding: 0;
-    margin:0
+    margin:0;
+    
+}
+.navContainer{
+
 }
 
 .navDesign{
+    
+    margin-top: 15px;
+    text-align: end;
     display: flex;
     justify-content: end;
-    margin-top: 15px;
+   
     
     
 }
@@ -16,5 +23,27 @@
 .navDesign  li a{
     text-decoration: none;
     margin-right: 15px;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.headerDesign{
+    background-image: url("/images/mainImg.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    margin-top: -32px;
     
+}
+.headerDesign div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%
+
 }
