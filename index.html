@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a9d8d7f60b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav id="navContainer">
-      <div id="navDesign">
-        <li><a href="#top">TOP</a></li>
-        <li><a href="#vision">VISION</a></li>
-        <li><a href="#message">MESSAGE</a></li>
-        <li><a href="#service">SERVICE</a></li>
-        <li><a href="#story">STORY</a></li>
-        <li><a href="#profile">PROFILE</a></li>
+    <section id="navigationSection">
+      <nav id="navContainer">
+        <div id="navDesign">
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#vision">VISION</a></li>
+          <li><a href="#message">MESSAGE</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#story">STORY</a></li>
+          <li><a href="#profile">PROFILE</a></li>
+        </div>
+        <div id="menubarDesign">
+          <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+      <div class="dropDownMenu">
+        <li><a href="#top"><span><i class="fa-solid fa-greater-than"></i></span>TOP</a></li>
+        <hr>
+        <li><a href="#vision"><span><i class="fa-solid fa-greater-than"></i></span>VISION</a></li>
+        <hr>
+        <li><a href="#message"><span><i class="fa-solid fa-greater-than"></i></span>MESSAGE</a></li>
+        <hr>
+        <li><a href="#service"><span><i class="fa-solid fa-greater-than"></i></span>SERVICE</a></li>
+        <hr>
+        <li><a href="#story"><span><i class="fa-solid fa-greater-than"></i></span>STORY</a></li>
+        <hr>
+        <li><a href="#profile"><span><i class="fa-solid fa-greater-than"></i></span>PROFILE</a></li>
       </div>
-    </nav>
+    </section>
 
     <header id="headerContainer">
       <div id="headerDesign">
@@ -92,16 +114,18 @@
     </section>
 
     <section id="story" class="storyContainer">
-      
-        <div class="storyContainerDesign">
-          <h1>Story</h1>
-          <p>科学的研究というのが近代私学の学問的方法による研究という意義であるならば、これは史学の学徒の間に老いては一般に行われていることであるから、今更こと新しくいうには及ばないはずである。</p>
-        </div>
-        <div class="storyContainerDesign">
-          <h1>Success</h1>
-          <p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代私学の学問的方法による研究という意義であるならば。</p>
-        </div>
-      
+      <div class="storyContainerDesign">
+        <h1>Story</h1>
+        <p>
+          科学的研究というのが近代私学の学問的方法による研究という意義であるならば、これは史学の学徒の間に老いては一般に行われていることであるから、今更こと新しくいうには及ばないはずである。
+        </p>
+      </div>
+      <div class="storyContainerDesign">
+        <h1>Success</h1>
+        <p>
+          ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代私学の学問的方法による研究という意義であるならば。
+        </p>
+      </div>
     </section>
 
     <section id="profile" class="container">
@@ -116,19 +140,40 @@
           <pre>主な取引先: 見本商事株式会社</pre>
           <pre>           株式会社年中無休商事</pre>
           <pre>           株式会社仮称</pre>
-
         </div>
         <div class="contactLayoutDesign">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.593793029197!2d136.92942347583408!3d36.70829797227345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff781ec5af4ca3f%3A0x2ade3e8e4c2801b8!2sFukuoka%20Station!5e0!3m2!1sen!2sbd!4v1732700826862!5m2!1sen!2sbd"width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.593793029197!2d136.92942347583408!3d36.70829797227345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff781ec5af4ca3f%3A0x2ade3e8e4c2801b8!2sFukuoka%20Station!5e0!3m2!1sen!2sbd!4v1732700826862!5m2!1sen!2sbd"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-
     </section>
     <footer>
       <div>
-        <small>Copyricht(c) 20XX Sample Inc. Al Rights Reserved Desion by <a href="http://1-tpl.com|">http://1-tpl.com|</a></small>
+        <small
+          >Copyricht(c) 20XX Sample Inc. Al Rights Reserved Desion by
+          <a href="http://1-tpl.com|">http://1-tpl.com|</a></small
+        >
       </div>
     </footer>
+
+    <script>
+      const menubarDesign = document.getElementById("menubarDesign")
+      const dropDownMenu = document.querySelector(".dropDownMenu")
+
+      menubarDesign.addEventListener('click', ()=>{
+        // dropDownMenu.classList('open')
+        dropDownMenu.classList.toggle("active")
+
+      })
+
+
+    </script>
   </body>
 </html>
