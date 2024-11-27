@@ -80,3 +80,24 @@
     gap: 5px;
     background-color: #F6F6F6;
 }
+#serviceDesign{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.serviceDesignCard{
+    display: flex;
+    max-height: 400px;
+    padding: 10px;
+    flex-direction: column;
+    gap:10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.serviceDesignCard img{
+    width: 200px;
+    height: 200px;
+}
+.serviceDesignCard p{
+    height: 165px;
+}
