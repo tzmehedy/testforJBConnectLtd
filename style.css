@@ -124,3 +124,12 @@
     height: 100px;
     margin-top: 25px;
 }
+#contactDesign{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactLayoutDesign{
+   margin-left: 20px;
+}
