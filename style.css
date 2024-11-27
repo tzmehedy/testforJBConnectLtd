@@ -101,3 +101,26 @@
 .serviceDesignCard p{
     height: 165px;
 }
+.storyContainer{
+    background-image: url("./images/bgSec04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.storyContainerDesign{
+    width: 300px;
+    text-align: center;
+    margin: 20px 40px;
+}
+.storyContainerDesign p{
+    text-align: justify;
+    height: 100px;
+    margin-top: 25px;
+}
