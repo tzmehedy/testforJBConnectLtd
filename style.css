@@ -58,19 +58,19 @@
     font-size: 15px;
     margin-top: 5px;
 }
-.messageDesign{
+#messageDesign{
     display: flex;
     margin: 80px 0;
 
 }
-.messageDesignImg{
+#messageDesignImg{
     width: 50%;
 }
-.messageDesignImg img{
+#messageDesignImg img{
     width: 100%;
     height: 100%;
 }
-.messageDesignText{
+#messageDesignText{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -80,6 +80,34 @@
     gap: 5px;
     background-color: #F6F6F6;
 }
+
+#messageServiceDesign{
+    display: flex;
+    margin: 80px 0;
+
+}
+#messageServiceDesignImg{
+    width: 50%;
+}
+#messageServiceDesignImg img{
+    width: 100%;
+    height: 100%;
+}
+#messageServiceDesignText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    background-color: #F6F6F6;
+}
+
+
+
+
+
 #serviceDesign{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,7 +157,74 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .contactLayoutDesign{
    margin-left: 20px;
+}
+footer{
+    margin: 80px 0px;
+    text-align: center;
+}
+
+@media (max-width:768PX) {
+    #navContainer{
+        display: none;
+    }
+    #headerContainer{
+        background-size: cover;
+    }
+
+    #serviceDesign{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .serviceDesignCard{
+        margin-right: 0;
+        gap: 0;
+        padding: 2px;
+    }
+    .storyContainer{
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+    }
+    #messageDesign{
+        flex-direction: column;
+    }
+    #messageDesignImg{
+        width:100%;
+    }
+    #messageDesignText{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    #messageServiceDesign{
+        flex-direction: column-reverse;
+    }
+    #messageServiceDesignImg{
+        width:100%;
+    }
+    #messageServiceDesignText{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    #contactDesign{
+        flex-direction: column;
+        
+    }
+    .contactLayoutDesign{
+        margin-top: 20px;
+    }
+    
+    
 }
